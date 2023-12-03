@@ -7,16 +7,8 @@
 
 	<title><?php wp_title( '|', true, 'right' ); ?><?php bloginfo( 'name' ); ?></title>
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet">
-
 	<?php
 		wp_head();
-
-		$logo = get_field( 'logo', 'option' );
-		$phones = get_field( 'phones', 'option' );
 	?>
 </head>
 <body <?php body_class(); ?>>
@@ -60,18 +52,4 @@
 		);
 	?>
 
-	<div class="header__info-wrap">
-		<div class="gj-wrapper">
-			<div class="header__info">
-				<?php
-					if( !empty($phones) ){
-						foreach ( $phones as $phone ){ ?>
-							<a href="tel:<?php echo preg_replace("/[^0-9]/", "", $phone['phone_number']) ?>"><?php echo $phone['phone_prefix'] ?> <?php echo $phone['phone_number'] ?></a>
-				<?php
-						}
-					}
-				?>
-			</div>
-		</div>
-	</div>
 </header>
