@@ -1,0 +1,64 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: $hind;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.2;
+	position: relative;
+	background: #fff;
+	margin: 0;
+	padding: 137px 0 0 0;
+	overflow-x: hidden;
+
+	&.gj-open{
+		overflow: hidden;
+	}
+}
+
+@media ( $br_point_phone ) {
+	body{
+		padding: 113px 0 0 0;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+ul,
+li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	text-underline-offset: 3px;
+}
+
+img {
+	width: 100%;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
