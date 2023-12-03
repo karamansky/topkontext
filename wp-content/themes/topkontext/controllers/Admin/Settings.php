@@ -10,17 +10,17 @@ class Settings {
 
     public function initHooks() {
         add_action( 'acf/init', [ $this, 'addOptionsPages' ] );
-        add_action( 'after_setup_theme', [ $this, 'gjSetup' ] );
+        add_action( 'after_setup_theme', [ $this, 'topSetup' ] );
     }
 
-    public function gjSetup() {
+    public function topSetup() {
         /*
         * Make theme available for translation.
         * Translations can be filed in the /languages/ directory.
-        * If you're building a theme based on gj, use a find and replace
-        * to change 'gj' to the name of your theme in all the template files.
+        * If you're building a theme based on top, use a find and replace
+        * to change 'top' to the name of your theme in all the template files.
         */
-        load_theme_textdomain( 'gj', get_template_directory().'/languages' );
+        load_theme_textdomain( 'top', get_template_directory().'/languages' );
 
         // Add default posts and comments RSS feed links to head.
         add_theme_support( 'automatic-feed-links' );

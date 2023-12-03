@@ -72,7 +72,7 @@ class GutenbergBlocks {
 			[
 				'name'        => 'delimiter',
 				'title'       => 'Delimiter',
-				'category'    => 'gj-blocks',
+				'category'    => 'top-blocks',
 				'description' => '',
 				'icon'        => [ 'background' => '#1c2335', 'src' => 'image-flip-vertical' ],
 				'keywords'    => [ 'delimiter', 'line' ]
@@ -80,7 +80,7 @@ class GutenbergBlocks {
 			[
 				'name'        => 'home_hero',
 				'title'       => 'Home Hero block',
-				'category'    => 'gj-blocks',
+				'category'    => 'top-blocks',
 				'description' => '',
 				'icon'        => [ 'background' => '#1c2335', 'src' => 'admin-home' ],
 				'keywords'    => [ 'hero', 'page', 'top', 'block' ],
