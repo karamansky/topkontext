@@ -19,6 +19,10 @@
 	@media ( $br_point_tablet ) {
 		height: 90px;
 	}
+
+	@media ( $br_point_phone ) {
+		height: 60px;
+	}
 }
 
 .header__logo{
@@ -50,6 +54,11 @@
 }
 
 .header__menu{
+
+	@media ( $br_point_phone ) {
+		display: none;
+	}
+
 	.header-menu{
 		display: flex;
 		align-items: center;
@@ -80,7 +89,7 @@
 		font-family: $poppins;
 		font-size: 18px;
 		font-weight: 800;
-		color: #0a0a0a;
+		color: $black;
 		text-transform: uppercase;
 
 		@media ( $br_point_tablet ) {
@@ -102,6 +111,10 @@
 
 	@media ( $br_point_tablet ) {
 		margin-left: 15px;
+	}
+
+	@media ( $br_point_phone ) {
+		display: none;
 	}
 }
 
@@ -141,8 +154,107 @@
 		height: 38px;
 		font-size: 14px;
 	}
+
+	i{
+		margin-right: 8px;
+	}
 }
 
+.header__navbar-toggle{
+	display: none;
+	width: 22px;
+	height: 22px;
+	color: $black;
+	font-size: 22px;
 
+	@media ( $br_point_phone ) {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 
+	.fa-times{
+		display: none;
+	}
 
+	&.top-open{
+		.fa-times{
+			display: block;
+		}
+		.fa-bars{
+			display: none;
+		}
+	}
+}
+
+.header__phone-mob{
+	display: none;
+	width: 100%;
+	height: 50px;
+	background: $blue;
+	color: $dark-blue;
+	font-family: $poppins;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 1.2;
+	padding: 0 15px;
+
+	span{
+		text-transform: capitalize;
+		margin-right: 8px;
+	}
+
+	.header__phone--mob{
+		color: #fff;
+		font-weight: 700;
+
+		i{
+			display: none;
+		}
+	}
+
+	@media ( $br_point_phone ) {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.header__menu--mob{
+	display: none;
+	padding: 10px 15px;
+	overflow: hidden;
+	background: $blue;
+	height: calc(100vh - 110px);
+	height: calc(100dvh - 110px);
+	overflow-y: auto;
+
+	&.top-open + .header__phone-mob{
+		padding: 5px 0;
+		border-top: 1px solid $dark-blue;
+	}
+
+	.sub-menu{
+		display: none;
+	}
+
+	.menu-item{
+		padding: 3px 0;
+
+		a{
+			display: block;
+			font-family: $poppins;
+			font-size: 26px;
+			line-height: 1.2;
+			font-weight: 800;
+			color: #fff;
+			text-transform: uppercase;
+			margin: 15px 0;
+		}
+
+		&.current-menu-item a{
+			color: $dark-blue;
+		}
+	}
+}

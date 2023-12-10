@@ -20,6 +20,7 @@
 	$logo = get_field('header_logo', 'option');
 	$button = get_field('header_button', 'option');
 	$phone = get_field('header_phone', 'option');
+	$phone_cta_text = get_field('phone_cta_text', 'option');
 ?>
 <header class="header">
 	<div class="wrapper">
@@ -55,7 +56,36 @@
 						<?php } ?>
 					</div>
 				<?php } ?>
+				<a href="#" class="header__navbar-toggle">
+					<i class="fa fa-bars"></i>
+					<i class="fa fa-times"></i>
+				</a>
 			</div>
 		</div>
 	</div>
+
+	<nav class="header__menu--mob">
+		<?php
+			wp_nav_menu(
+				[
+					'theme_location' => 'primary-menu',
+					'menu_class'     => 'header-menu',
+					'container'       => 'nav',
+					'container_class' => 'header-menu__container',
+				]
+			);
+		?>
+	</nav>
+
+	<?php if( !empty($phone) ) { ?>
+		<div class="header__phone-mob">
+			<?php if( !empty($phone_cta_text) ) { ?>
+				<span><?php echo $phone_cta_text ?></span>
+			<?php } ?>
+			<a href="tel:<?php echo preg_replace("/[^0-9]/", "", $phone) ?>" class="header__phone--mob">
+				<i class="fa fa-phone"></i>
+				<?php echo sanitize_text_field($phone); ?>
+			</a>
+		</div>
+	<?php } ?>
 </header>

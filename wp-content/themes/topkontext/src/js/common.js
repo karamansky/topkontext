@@ -1,6 +1,13 @@
-let originalReviewHtml = '';
-
 jQuery(document).ready(function( $ ) {
+
+    if( jQuery('.header__navbar-toggle').length ){
+        jQuery(document).on('click', '.header__navbar-toggle', function(e){
+            e.preventDefault();
+            jQuery(this).toggleClass('top-open');
+            jQuery('.header__menu--mob').toggleClass('top-open').slideToggle('slow');
+        });
+    }
+
 
 
     jQuery(document).on('click', '.history-back', function( e ) {
@@ -17,18 +24,18 @@ jQuery(document).ready(function( $ ) {
 
 
     //menu sub-menu show/hide
-    jQuery(document).on('click', '.menu-item-has-children > a', function(e){
-        e.preventDefault();
-        jQuery(this).parent().toggleClass('top-active');
-        jQuery(this).parent().find('.sub-menu').toggleClass('top-active');
-    });
-	jQuery(document).mouseup(function (e){
-		let div = $(".menu-item-has-children .sub-menu");
-		if (!div.is(e.target) && !jQuery('.menu-item-has-children > a').is(e.target) && div.has(e.target).length === 0) {
-			div.removeClass('top-active');
-			div.closest('.menu-item-has-children').removeClass('top-active');
-		}
-	});
+    // jQuery(document).on('click', '.menu-item-has-children > a', function(e){
+    //     e.preventDefault();
+    //     jQuery(this).parent().toggleClass('top-active');
+    //     jQuery(this).parent().find('.sub-menu').toggleClass('top-active');
+    // });
+	// jQuery(document).mouseup(function (e){
+	// 	let div = $(".menu-item-has-children .sub-menu");
+	// 	if (!div.is(e.target) && !jQuery('.menu-item-has-children > a').is(e.target) && div.has(e.target).length === 0) {
+	// 		div.removeClass('top-active');
+	// 		div.closest('.menu-item-has-children').removeClass('top-active');
+	// 	}
+	// });
 
 
 

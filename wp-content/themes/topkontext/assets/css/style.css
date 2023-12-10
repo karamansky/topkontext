@@ -270,6 +270,95 @@ button {
   color: #fff;
 }
 
+.header__phone i {
+  margin-right: 8px;
+}
+
+.header__navbar-toggle {
+  display: none;
+  width: 22px;
+  height: 22px;
+  color: #0a0a0a;
+  font-size: 22px;
+}
+
+.header__navbar-toggle .fa-times {
+  display: none;
+}
+
+.header__navbar-toggle.top-open .fa-times {
+  display: block;
+}
+
+.header__navbar-toggle.top-open .fa-bars {
+  display: none;
+}
+
+.header__phone-mob {
+  display: none;
+  width: 100%;
+  height: 50px;
+  background: #0393e8;
+  color: #0b1d64;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  padding: 0 15px;
+}
+
+.header__phone-mob span {
+  text-transform: capitalize;
+  margin-right: 8px;
+}
+
+.header__phone-mob .header__phone--mob {
+  color: #fff;
+  font-weight: 700;
+}
+
+.header__phone-mob .header__phone--mob i {
+  display: none;
+}
+
+.header__menu--mob {
+  display: none;
+  padding: 10px 15px;
+  overflow: hidden;
+  background: #0393e8;
+  height: calc(100vh - 110px);
+  height: calc(100dvh - 110px);
+  overflow-y: auto;
+}
+
+.header__menu--mob.top-open + .header__phone-mob {
+  padding: 5px 0;
+  border-top: 1px solid #0b1d64;
+}
+
+.header__menu--mob .sub-menu {
+  display: none;
+}
+
+.header__menu--mob .menu-item {
+  padding: 3px 0;
+}
+
+.header__menu--mob .menu-item a {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 15px 0;
+}
+
+.header__menu--mob .menu-item.current-menu-item a {
+  color: #0b1d64;
+}
+
 @media (max-width: 1200px) {
   .wrapper {
     max-width: 1000px;
@@ -311,5 +400,43 @@ button {
 @media (max-width: 768px) {
   .wrapper {
     max-width: 100%;
+  }
+
+  .header__inner {
+    height: 60px;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .header__buttons {
+    display: none;
+  }
+
+  .header__navbar-toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .header__phone-mob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
