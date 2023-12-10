@@ -5,24 +5,19 @@
 }
 
 body {
-	font-family: $hind;
+	font-family: $arial;
 	font-weight: 400;
-	font-size: 18px;
-	line-height: 1.2;
+	font-size: 16px;
+	line-height: 1.5;
+	color: $dark;
 	position: relative;
 	background: #fff;
 	margin: 0;
-	padding: 137px 0 0 0;
+	padding:  0 0 0 0;
 	overflow-x: hidden;
 
-	&.gj-open{
+	&.top-open{
 		overflow: hidden;
-	}
-}
-
-@media ( $br_point_phone ) {
-	body{
-		padding: 113px 0 0 0;
 	}
 }
 
@@ -62,3 +57,68 @@ button {
 	cursor: pointer;
 	width: 100%;
 }
+
+.wrapper{
+	width: 100%;
+	max-width: $wrapper-max-width;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+
+	@media ( $br_point_laptop ) {
+		max-width: 1000px;
+	}
+	@media ( $br_point_tablet ) {
+		max-width: 780px;
+	}
+	@media ( $br_point_phone ) {
+		max-width: 100%;
+	}
+}
+
+.btn{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: $blue;
+	border-color: $blue;
+	color: #fff;
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 1;
+	padding: 0 15px;
+	border-radius: 2em;
+	transition: all 0.3s;
+}
+
+.btn--blue{
+	background-color: $blue;
+	border: 1px solid $blue;
+	color: #fff;
+
+	&:hover{
+		background: #fff;
+		border-color: $blue;
+		color: $blue;
+	}
+}
+
+.btn--dark-blue{
+	background-color: $dark-blue;
+	border: 1px solid $dark-blue;
+	color: #fff;
+
+	&:hover{
+		background: #fff;
+		border-color: $dark-blue;
+		color: #fff;
+	}
+}
+
+
+
+
+
+
+
+

@@ -71,6 +71,17 @@ class Settings {
             ]
         );
 
+		acf_add_options_page(
+			[
+				'page_title'  => 'Header',
+				'menu_title'  => 'Header',
+				'menu_slug'   => 'top-header-theme-settings',
+				'parent_slug' => 'top-theme-settings',
+				'capability'  => 'administrator',
+				'redirect'    => false
+			]
+		);
+
         acf_add_options_page(
             [
                 'page_title'  => 'Contacts',

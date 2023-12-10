@@ -4,7 +4,7 @@ if( !defined( 'ABSPATH' ) ) exit;
 
 class EnqueueFiles {
 
-	public static $version = 1.4;
+	public static $version = 1.0;
 
 	public function __construct() {
 		$this->applyActions();
