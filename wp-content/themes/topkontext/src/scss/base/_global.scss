@@ -77,9 +77,10 @@ button {
 }
 
 .btn{
-	display: flex;
+	display: inline-flex;
 	align-items: center;
 	justify-content: center;
+	height: 47px;
 	background-color: $blue;
 	border-color: $blue;
 	color: #fff;
