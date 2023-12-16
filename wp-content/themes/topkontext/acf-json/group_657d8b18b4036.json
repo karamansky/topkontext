@@ -114,7 +114,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/home-hero"
+                "value": "acf\/hero"
             }
         ]
     ],
@@ -127,5 +127,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1702726778
+    "modified": 1702732037
 }

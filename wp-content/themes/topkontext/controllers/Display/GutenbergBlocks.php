@@ -74,21 +74,37 @@ class GutenbergBlocks {
 				'title'       => 'Delimiter',
 				'category'    => 'top-blocks',
 				'description' => '',
-				'icon'        => [ 'background' => '#1c2335', 'src' => 'image-flip-vertical' ],
+				'icon'        => [ 'background' => '#0b1d64', 'src' => 'image-flip-vertical' ],
 				'keywords'    => [ 'delimiter', 'line' ]
 			],
 			[
-				'name'        => 'home_hero',
-				'title'       => 'Home Hero block',
+				'name'        => 'hero',
+				'title'       => 'Hero block',
 				'category'    => 'top-blocks',
 				'description' => '',
-				'icon'        => [ 'background' => '#1c2335', 'src' => 'admin-home' ],
+				'icon'        => [ 'background' => '#0b1d64', 'src' => 'admin-home' ],
 				'keywords'    => [ 'hero', 'page', 'top', 'block' ],
 				'example'     => [
 					'attributes' => [
 						'mode' => 'preview',
 						'data' => [
-							'image' => 'hero-module.png',
+							'image' => 'hero-block.png',
+						]
+					]
+				]
+			],
+			[
+				'name'        => 'text_block',
+				'title'       => 'Text dark blue block',
+				'category'    => 'top-blocks',
+				'description' => '',
+				'icon'        => [ 'background' => '#0b1d64', 'src' => 'media-spreadsheet' ],
+				'keywords'    => [ 'text', 'page', 'block' ],
+				'example'     => [
+					'attributes' => [
+						'mode' => 'preview',
+						'data' => [
+							'image' => 'text-dark-blue-block.png',
 						]
 					]
 				]
