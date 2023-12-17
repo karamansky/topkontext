@@ -20,7 +20,7 @@ jQuery(document).ready(function( $ ) {
             autoplaySpeed: 4000,
             responsive: [
                 {
-                    breakpoint: 992,
+                    breakpoint: 1000,
                     settings: {
                         arrows: false,
                         centerMode: true,
@@ -41,6 +41,16 @@ jQuery(document).ready(function( $ ) {
         });
     }
 
+
+    //faq
+    if( jQuery('.faq__item-content').length ){
+        jQuery(document).on('click', '.faq__item-title', function(e){
+            e.preventDefault();
+            let faq_item = jQuery(this).closest('.faq__item');
+            faq_item.toggleClass('top-open');
+            faq_item.find('.faq__item-content').slideToggle();
+        })
+    }
 
 
 
@@ -118,15 +128,6 @@ jQuery(document).ready(function( $ ) {
         })
     }
 
-    //faq
-    if( jQuery('.faq__item').length ) {
-        jQuery(document).on('click', '.faq__item', function( e ) {
-            e.preventDefault();
-
-            jQuery('.faq__item').removeClass('top-active');
-            jQuery(this).toggleClass('top-active');
-        })
-    }
 
     //Trick for 100vh in mobile browsers
     // First we get the viewport height and we multiple it by 1% to get a value for a vh unit

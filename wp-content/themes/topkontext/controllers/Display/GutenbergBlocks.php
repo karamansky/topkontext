@@ -162,13 +162,29 @@ class GutenbergBlocks {
 				'title'       => 'Call to action block',
 				'category'    => 'top-blocks',
 				'description' => '',
-				'icon'        => [ 'background' => '#0b1d64', 'src' => 'grid-view' ],
+				'icon'        => [ 'background' => '#0b1d64', 'src' => 'button' ],
 				'keywords'    => [ 'cta', 'call to action', 'block' ],
 				'example'     => [
 					'attributes' => [
 						'mode' => 'preview',
 						'data' => [
 							'image' => 'call-to-action-block.png',
+						]
+					]
+				]
+			],
+			[
+				'name'        => 'faq',
+				'title'       => 'FAQ block',
+				'category'    => 'top-blocks',
+				'description' => '',
+				'icon'        => [ 'background' => '#0b1d64', 'src' => 'editor-justify' ],
+				'keywords'    => [ 'faq', 'block' ],
+				'example'     => [
+					'attributes' => [
+						'mode' => 'preview',
+						'data' => [
+							'image' => 'faq-block.png',
 						]
 					]
 				]
