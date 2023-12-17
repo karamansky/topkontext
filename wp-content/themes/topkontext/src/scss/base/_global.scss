@@ -92,6 +92,16 @@ button {
 	transition: all 0.3s;
 }
 
+.btn--big{
+	height: 72px;
+	padding-left: 30px;
+	padding-right: 30px;
+
+	@media ($br_point_laptop) {
+		height: 50px;
+	}
+}
+
 .btn--blue{
 	background-color: $blue;
 	border: 1px solid $blue;

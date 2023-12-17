@@ -91,6 +91,12 @@ button {
   transition: all 0.3s;
 }
 
+.btn--big {
+  height: 72px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .btn--blue {
   background-color: #0393e8;
   border: 1px solid #0393e8;
@@ -629,6 +635,55 @@ button {
   color: #fff;
 }
 
+.text-with-image-right {
+  padding: 180px 0 80px 0;
+  background-color: #fff;
+  background-size: 700px;
+  background-position: calc(100% + 200px) center;
+  background-repeat: no-repeat;
+}
+
+.text-with-image-right__inner {
+  width: 100%;
+  max-width: 750px;
+}
+
+.text-with-image-right__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  line-height: 57px;
+  font-weight: 700;
+  color: #0b1d64;
+  margin: 0 0 25px;
+}
+
+.text-with-image-right__text {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #444444;
+  margin-bottom: 35px;
+}
+
+.text-with-image-right__text p {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #444444;
+}
+
+.text-with-image-right__text p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.text-with-image-right__button {
+  min-width: 200px;
+}
+
+.text-with-image__img {
+  display: none;
+}
+
 .footer__copy {
   padding: 15px 0;
   background: #0393e8;
@@ -674,6 +729,10 @@ button {
 @media (max-width: 1200px) {
   .wrapper {
     max-width: 1000px;
+  }
+
+  .btn--big {
+    height: 50px;
   }
 
   .hero__title {
@@ -726,6 +785,15 @@ button {
     z-index: 3;
     max-width: 400px;
   }
+
+  .text-with-image-right {
+    padding: 80px 0 80px 0;
+    background-size: 600px;
+  }
+
+  .text-with-image-right__inner {
+    max-width: 600px;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -777,6 +845,20 @@ button {
 
   .text-columns__additional-left:before {
     left: 35%;
+  }
+
+  .text-with-image-right {
+    padding: 80px 0 80px 0;
+    background-size: 600px;
+  }
+
+  .text-with-image-right__inner {
+    max-width: 345px;
+  }
+
+  .text-with-image-right__title {
+    font-size: 30px;
+    line-height: 1.2;
   }
 }
 
@@ -909,6 +991,22 @@ button {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
+  }
+
+  .text-with-image-right {
+    padding: 80px 0 80px 0;
+    background-size: 600px;
+    background-image: none !important;
+  }
+
+  .text-with-image-right__inner {
+    max-width: 100%;
+  }
+
+  .text-with-image__img {
+    display: block;
+    position: relative;
+    margin-top: 35px;
   }
 
   .footer__copy-left {

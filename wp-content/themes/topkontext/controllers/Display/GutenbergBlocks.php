@@ -109,6 +109,22 @@ class GutenbergBlocks {
 					]
 				]
 			],
+			[
+				'name'        => 'text_with_image_right',
+				'title'       => 'Text with image right block',
+				'category'    => 'top-blocks',
+				'description' => '',
+				'icon'        => [ 'background' => '#0b1d64', 'src' => 'media-document' ],
+				'keywords'    => [ 'text', 'image', 'block' ],
+				'example'     => [
+					'attributes' => [
+						'mode' => 'preview',
+						'data' => [
+							'image' => 'text-with-image-right-block.png',
+						]
+					]
+				]
+			],
 		];
 	}
 
