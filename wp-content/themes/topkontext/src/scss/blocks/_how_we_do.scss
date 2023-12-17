@@ -1,0 +1,170 @@
+.how-we-do{
+	padding: 80px 0;
+	background: $lightgray;
+	overflow-x: hidden;
+}
+
+.how-we-do__title{
+	font-family: $poppins;
+	font-size: 45px;
+	line-height: 51px;
+	color: $dark-blue;
+	font-weight: 700;
+	text-align: center;
+}
+
+.how-we-do__description{
+	margin: 10px 0 35px;
+	font-family: $arial;
+	font-size: 16px;
+	line-height: 1.8;
+	color: $dark;
+	text-align: center;
+
+	p{
+		font-family: $arial;
+		font-size: 16px;
+		line-height: 1.8;
+		color: $dark;
+	}
+}
+
+.how-we-do__content{
+	padding: 20px;
+	background-color: #ced1e0;
+	border-radius: 28px 28px 0 0;
+}
+
+.how-we-do__items{
+	display: flex;
+	flex-wrap: wrap;
+	background: #fff;
+	border-radius: 28px;
+	padding: 40px 20px 0;
+	position: relative;
+
+	&:before{
+		content: '';
+		display: block;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background: $dark-blue;
+		position: absolute;
+		left: calc(50% - 5px);
+		top: -14px;
+	}
+
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		left: -50px;
+		right: -50px;
+		bottom: -60px;
+		width: calc(100% + 100px);
+		height: 40px;
+		background-color: #848db1;
+		border-radius: 50px;
+	}
+}
+
+.how-we-do__item{
+	width: calc(100% / 3 - 40px);
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 40px;
+}
+
+.how-we-do__icon{
+	width: 75px;
+	height: 75px;
+	margin-bottom: 10px;
+
+	img{
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+}
+
+.how-we-do__item-title {
+	color: $dark-blue;
+	font-size: 24px;
+	line-height: 1.5;
+	letter-spacing: -1.5px;
+	font-weight: 400;
+	margin: 0 0 10px;
+}
+
+.how-we-do__text{
+	font-family: $arial;
+	font-size: 16px;
+	line-height: 30px;
+	color: $dark;
+	font-weight: 400;
+}
+
+
+
+
+@media ( $br_point_laptop ){
+	.how-we-do__content{
+		max-width: calc(100% - 100px);
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+
+@media ( $br_point_tablet ) {
+	.how-we-do__items{
+		padding: 20px 20px 0;
+	}
+
+	.how-we-do__item{
+		width: calc(100% / 2 - 30px);
+		margin-left: 15px;
+		margin-right: 15px;
+		margin-bottom: 30px;
+	}
+
+	.how-we-do__icon{
+		width: 50px;
+		height: 50px;
+	}
+}
+
+
+@media ( $br_point_phone ) {
+	.how-we-do__content{
+		max-width: 100%;
+		padding: 0;
+		background-color: transparent;
+	}
+
+	.how-we-do__title{
+		font-size: 26px;
+		line-height: 30px;
+	}
+
+	.how-we-do__items{
+		padding: 0;
+		max-width: 100%;
+		background-color: transparent;
+
+		&:before,
+		&:after{
+			display: none;
+		}
+	}
+
+	.how-we-do__item{
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+}

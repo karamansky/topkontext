@@ -141,6 +141,22 @@ class GutenbergBlocks {
 					]
 				]
 			],
+			[
+				'name'        => 'how_we_do',
+				'title'       => 'How we do block',
+				'category'    => 'top-blocks',
+				'description' => '',
+				'icon'        => [ 'background' => '#0b1d64', 'src' => 'grid-view' ],
+				'keywords'    => [ 'how we do', 'grid', 'block' ],
+				'example'     => [
+					'attributes' => [
+						'mode' => 'preview',
+						'data' => [
+							'image' => 'how-we-do-block.png',
+						]
+					]
+				]
+			],
 		];
 	}
 
