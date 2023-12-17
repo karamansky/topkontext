@@ -157,6 +157,22 @@ class GutenbergBlocks {
 					]
 				]
 			],
+			[
+				'name'        => 'cta',
+				'title'       => 'Call to action block',
+				'category'    => 'top-blocks',
+				'description' => '',
+				'icon'        => [ 'background' => '#0b1d64', 'src' => 'grid-view' ],
+				'keywords'    => [ 'cta', 'call to action', 'block' ],
+				'example'     => [
+					'attributes' => [
+						'mode' => 'preview',
+						'data' => [
+							'image' => 'call-to-action-block.png',
+						]
+					]
+				]
+			],
 		];
 	}
 
