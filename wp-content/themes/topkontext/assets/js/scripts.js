@@ -9,6 +9,49 @@ jQuery(document).ready(function( $ ) {
     }
 
 
+    if( jQuery('.reviews-slider__items').length ){
+        jQuery('.reviews-slider__items').slick({
+            dots: false,
+            arrows: false,
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '15px',
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '15px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 
     jQuery(document).on('click', '.history-back', function( e ) {
         e.preventDefault();

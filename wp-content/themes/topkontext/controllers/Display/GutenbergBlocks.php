@@ -125,6 +125,22 @@ class GutenbergBlocks {
 					]
 				]
 			],
+			[
+				'name'        => 'reviews_slider',
+				'title'       => 'Reviews slider block',
+				'category'    => 'top-blocks',
+				'description' => '',
+				'icon'        => [ 'background' => '#0b1d64', 'src' => 'images-alt' ],
+				'keywords'    => [ 'reviews', 'slider', 'block' ],
+				'example'     => [
+					'attributes' => [
+						'mode' => 'preview',
+						'data' => [
+							'image' => 'reviews-slider-block.png',
+						]
+					]
+				]
+			],
 		];
 	}
 
