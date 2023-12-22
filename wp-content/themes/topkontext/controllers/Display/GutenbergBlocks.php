@@ -189,6 +189,22 @@ class GutenbergBlocks {
 					]
 				]
 			],
+			[
+				'name'        => 'contacts',
+				'title'       => 'Contacts block',
+				'category'    => 'top-blocks',
+				'description' => '',
+				'icon'        => [ 'background' => '#0b1d64', 'src' => 'email' ],
+				'keywords'    => [ 'contacts', 'block' ],
+				'example'     => [
+					'attributes' => [
+						'mode' => 'preview',
+						'data' => [
+							'image' => 'contacts-block.png',
+						]
+					]
+				]
+			],
 		];
 	}
 
