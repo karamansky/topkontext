@@ -205,6 +205,22 @@ class GutenbergBlocks {
 					]
 				]
 			],
+			[
+				'name'        => 'form_block',
+				'title'       => 'Form block',
+				'category'    => 'top-blocks',
+				'description' => '',
+				'icon'        => [ 'background' => '#0b1d64', 'src' => 'email' ],
+				'keywords'    => [ 'contacts', 'form', 'block' ],
+				'example'     => [
+					'attributes' => [
+						'mode' => 'preview',
+						'data' => [
+							'image' => 'form-block.png',
+						]
+					]
+				]
+			],
 		];
 	}
 
