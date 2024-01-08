@@ -1,5 +1,5 @@
 .cta{
-	padding: 80px 0;
+	padding: 120px 0 80px;
 	background: #fff;
 	overflow-x: hidden;
 }
@@ -100,6 +100,10 @@
 
 
 @media ( $br_point_tablet ){
+	.cta{
+		padding: 80px 0;
+	}
+
 	.cta__inner{
 		padding: 30px;
 	}
