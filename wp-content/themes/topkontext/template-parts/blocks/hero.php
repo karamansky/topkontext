@@ -7,7 +7,8 @@
 
 	$title = get_field('title');
 	$description = get_field('description');
-	$button = get_field('button');
+	$button1 = get_field('button');
+	$button2 = get_field('button2');
 	$image = get_field('image');
 	$guaranty_image = get_field('guaranty_image');
 
@@ -22,7 +23,10 @@
 			<?php if( !empty($description) ){ ?>
 				<div class="hero__description"><?php echo $description; ?></div>
 			<?php } ?>
-			<?php DisplayGlobal::renderAcfLink( $button, 'btn btn--blue hero__btn' ) ?>
+			<div class="hero__buttons">
+				<?php DisplayGlobal::renderAcfLink( $button1, 'btn btn--big btn--blue hero__btn' ) ?>
+				<?php DisplayGlobal::renderAcfLink( $button2, 'btn btn--big btn--orange hero__btn' ) ?>
+			</div>
 		</div>
 		<div class="hero__image">
 			<?php if( !empty($image) ){  DisplayGlobal::renderAcfImage($image, ''); } ?>

@@ -1,12 +1,12 @@
 .text-columns{
 	background: $dark-blue;
-	padding-top: 120px;
-	padding-bottom: 40px;
+	padding-top: 60px;
+	padding-bottom: 60px;
 	position: relative;
 	color: #fff;
 
 	h4,h5,h6,p,a,li{
-		color: #fff;
+		color: $white;
 	}
 
 	p{
@@ -33,7 +33,7 @@
 .text-columns__subtitle{
 	max-width: 850px;
 	font-family: $poppins;
-	color: $blue;
+	color: $orange;
 	font-size: 28px;
 	line-height: 1.5;
 	font-weight: 700;
@@ -76,24 +76,24 @@
 
 .text-columns__additional-left{
 	width: calc(50% - 15px);
-	max-width: 450px;
+	//max-width: 450px;
 	margin-right: 15px;
 	position: relative;
-	margin-top: 80px;
+	//margin-top: 80px;
 
-	&:before{
-		z-index: 1;
-		content: '';
-		display: block;
-		width: 650px;
-		height: 650px;
-		background: $blue;
-		border-radius: 50%;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translateX(-50%) translateY(-50%);
-	}
+	//&:before{
+	//	z-index: 1;
+	//	content: '';
+	//	display: block;
+	//	width: 650px;
+	//	height: 650px;
+	//	background: $blue;
+	//	border-radius: 50%;
+	//	position: absolute;
+	//	top: 50%;
+	//	left: 50%;
+	//	transform: translateX(-50%) translateY(-50%);
+	//}
 
 	*{
 		position: relative;
@@ -107,7 +107,7 @@
 
 .text-columns__additional-right{
 	width: calc(50% - 15px);
-	max-width: 450px;
+	//max-width: 450px;
 	margin-left: 15px;
 
 	p:not(:last-child){
@@ -121,14 +121,14 @@
 	line-height: 1.5;
 	letter-spacing: -1.5px;
 	font-weight: 300;
-	color: $dark-blue;
+	color: $orange;
 	margin-top: 35px;
 
 	p{
 		font-family: $poppins;
 		font-size: 22px;
 		line-height: 1.5;
-		color: $dark-blue;
+		color: $orange;
 	}
 }
 

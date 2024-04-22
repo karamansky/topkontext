@@ -5,7 +5,7 @@
 }
 
 .cta__inner{
-	background: $dark-blue url('../img/speak-to-expert-background.png') 50px 50px no-repeat;
+	background: $dark-blue;
 	color: #fff;
 	border-radius: 20px;
 	padding: 45px 55px;
@@ -49,16 +49,9 @@
 		font-weight: 400;
 		color: #fff;
 	}
-
-	p:not(:last-child){
-		margin-bottom: 10px;
-	}
 }
 
 .cta__bottom{
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
 	margin-top: 35px;
 }
 
@@ -67,20 +60,20 @@
 	font-size: 45px;
 	line-height: 50px;
 	color: #fff;
-	margin-right: 20px;
+	margin-bottom: 40px;
 }
 
 .cta__button{
 	position: relative;
 
-	&:before{
-		content: '\f095';
-		display: block;
-		font-family: 'FontAwesome';
-		font-size: 30px;
-		color: #fff;
-		margin-right: 10px;
-	}
+	//&:before{
+	//	content: '\f095';
+	//	display: block;
+	//	font-family: 'FontAwesome';
+	//	font-size: 30px;
+	//	color: #fff;
+	//	margin-right: 10px;
+	//}
 
 	&:hover:before{
 		color: $blue;

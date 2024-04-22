@@ -79,22 +79,25 @@ button {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	height: 47px;
+	height: 46px;
 	background-color: $blue;
-	border-color: $blue;
+	border: 2px solid $blue;
 	color: #fff;
 	font-weight: 600;
-	font-size: 22px;
+	font-size: 16px;
 	line-height: 1;
 	padding: 0 15px;
 	border-radius: 2em;
 	transition: all 0.3s;
+	min-width: 170px;
+	text-align: center;
 }
 
 .btn--big{
-	height: 72px;
+	height: 60px;
 	padding-left: 30px;
 	padding-right: 30px;
+	font-size: 20px;
 
 	@media ($br_point_laptop) {
 		height: 50px;
@@ -103,25 +106,37 @@ button {
 
 .btn--blue{
 	background-color: $blue;
-	border: 1px solid $blue;
+	border: 2px solid $blue;
 	color: #fff;
 
 	&:hover{
 		background: #fff;
-		border-color: $blue;
-		color: $blue;
+		border-color: $dark-blue;
+		color: $dark-blue;
 	}
 }
 
 .btn--dark-blue{
 	background-color: $dark-blue;
-	border: 1px solid $dark-blue;
+	border: 2px solid $dark-blue;
 	color: #fff;
 
 	&:hover{
 		background: #fff;
 		border-color: $dark-blue;
 		color: #fff;
+	}
+}
+
+.btn--orange{
+	background-color: $orange;
+	border: 2px solid $orange;
+	color: #fff;
+
+	&:hover{
+		background: $white;
+		border-color: $dark-orange;
+		color: $dark-orange;
 	}
 }
 

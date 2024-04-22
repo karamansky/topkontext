@@ -32,24 +32,24 @@
 					</a>
 				<?php } ?>
 			</div>
+			<nav class="header__menu">
+				<?php
+					wp_nav_menu(
+						[
+							'theme_location' => 'primary-menu',
+							'menu_class'     => 'header-menu',
+							'container'       => 'nav',
+							'container_class' => 'header-menu__container',
+						]
+					);
+				?>
+			</nav>
 			<div class="header__right">
-				<nav class="header__menu">
-					<?php
-						wp_nav_menu(
-							[
-								'theme_location' => 'primary-menu',
-								'menu_class'     => 'header-menu',
-								'container'       => 'nav',
-								'container_class' => 'header-menu__container',
-							]
-						);
-					?>
-				</nav>
 				<?php if( !empty($button) || !empty($phone) ) { ?>
 					<div class="header__buttons">
-						<?php if( !empty($button) ) { DisplayGlobal::renderAcfLink( $button, 'header__button btn btn--blue' ); } ?>
+<!--						--><?php //if( !empty($button) ) { DisplayGlobal::renderAcfLink( $button, 'header__button btn btn--blue' ); } ?>
 						<?php if( !empty($phone) ) { ?>
-							<a href="tel:<?php echo preg_replace("/[^0-9]/", "", $phone) ?>" class="header__phone btn btn--dark-blue">
+							<a href="tel:<?php echo preg_replace("/[^0-9]/", "", $phone) ?>" class="header__phone btn btn--blue">
 								<i class="fa fa-phone"></i>
 								<?php echo sanitize_text_field($phone); ?>
 							</a>

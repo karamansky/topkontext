@@ -44,8 +44,24 @@
         },
         {
             "key": "field_657d8b51b0de3",
-            "label": "Button",
+            "label": "Button 1",
             "name": "button",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_66260ee726651",
+            "label": "Button 2",
+            "name": "button2",
             "aria-label": "",
             "type": "link",
             "instructions": "",
@@ -127,5 +143,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1702732037
+    "modified": 1713770234
 }

@@ -7,36 +7,6 @@
 	margin: 0 -15px;
 	position: relative;
 
-	&::after {
-		content: "";
-		display: block;
-		position: absolute;
-		left: -120px;
-		bottom: -195px;
-		width: 275px;
-		height: 275px;
-		background-color: rgba(1, 47, 232, 0);
-		backdrop-filter: blur(19px) brightness(115%);
-		-webkit-backdrop-filter: blur(19px) brightness(115%);
-		border-radius: 100%;
-		z-index: 2;
-	}
-
-	&::before {
-		content: "";
-		display: block;
-		position: absolute;
-		right: 30%;
-		top: -64px;
-		width: 128px;
-		height: 128px;
-		background-color: rgba(1, 47, 232, 0);
-		backdrop-filter: blur(19px) brightness(115%);
-		-webkit-backdrop-filter: blur(19px) brightness(115%);
-		border-radius: 100%;
-		z-index: 2;
-	}
-
 	.slick-track {
 		display: flex !important;
 	}
@@ -64,7 +34,7 @@
 .reviews-slider__rating-star{
 	width: 33px;
 	height: 33px;
-	background: url('../img/star.png') center center no-repeat;
+	background: url('../img/star-icon.svg') center center no-repeat;
 	background-size: 100%;
 	margin-right: 5px;
 }

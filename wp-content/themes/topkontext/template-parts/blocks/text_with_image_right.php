@@ -26,7 +26,7 @@
 						<?php echo $text; ?>
 					</div>
 				<?php } ?>
-				<?php DisplayGlobal::renderAcfLink($button, 'btn btn--blue btn--big text-with-image-right__button'); ?>
+				<?php DisplayGlobal::renderAcfLink($button, 'btn btn--orange btn--big text-with-image-right__button'); ?>
 				<?php if( !empty($image) ) { ?>
 					<div class="text-with-image__img">
 						<?php DisplayGlobal::renderAcfImage($image); ?>

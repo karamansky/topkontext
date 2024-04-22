@@ -33,7 +33,7 @@
 				<?php if( !empty($button_title) ) { ?>
 					<h3 class="cta__button-title"><?php echo sanitize_text_field($button_title); ?></h3>
 				<?php } ?>
-				<?php DisplayGlobal::renderAcfLink($button, 'btn btn--blue btn--big cta__button'); ?>
+				<?php DisplayGlobal::renderAcfLink($button, 'btn btn--orange btn--big cta__button'); ?>
 			</div>
 		</div>
 	</div>
