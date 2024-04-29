@@ -19,8 +19,10 @@
 					<div class="contacts__item-icon contacts__item--email">
 						<i class="fa fa-envelope-o"></i>
 					</div>
-					<p>Email Us</p>
-					<a href="<?php echo $email['url'] ?>" target="<?php echo $email['alt'] ?>"><?php echo $email['title'] ?></a>
+					<div>
+						<p>Email Us</p>
+						<a href="<?php echo $email['url'] ?>" target="<?php echo $email['alt'] ?>"><?php echo $email['title'] ?></a>
+					</div>
 				</div>
 			<?php } ?>
 			<?php if( !empty($phone) ) { ?>
@@ -28,13 +30,15 @@
 					<div class="contacts__item-icon contacts__item--phone">
 						<i class="fa fa-mobile"></i>
 					</div>
-					<p>Call Us</p>
-					<a href="<?php echo $phone['url'] ?>" target="<?php echo $phone['alt'] ?>"><?php echo $phone['title'] ?></a>
+					<div>
+						<p>Call Us</p>
+						<a href="<?php echo $phone['url'] ?>" target="<?php echo $phone['alt'] ?>"><?php echo $phone['title'] ?></a>
+					</div>
 				</div>
 			<?php } ?>
 			<?php if( !empty($button) ) { ?>
 				<div class="contacts__item contacts__button">
-					<a href="<?php echo $button['url'] ?>" class="btn btn--big btn--blue" target="<?php echo $button['alt'] ?>"><?php echo $button['title'] ?></a>
+					<a href="<?php echo $button['url'] ?>" class="btn btn--big btn--orange" target="<?php echo $button['alt'] ?>"><?php echo $button['title'] ?></a>
 				</div>
 			<?php } ?>
 			<div class="contacts__circle"></div>
