@@ -4,11 +4,11 @@
 	overflow-x: hidden;
 }
 
-.cta__inner{
+.cta__inner {
 	background: $dark-blue;
 	color: #fff;
 	border-radius: 20px;
-	padding: 45px 55px;
+	padding: 45px 240px 45px 50px;
 	position: relative;
 }
 
@@ -84,10 +84,10 @@
 
 @media ( $br_point_laptop ){
 	.cta__image {
-		width: 380px;
-		height: 380px;
-		right: -50px;
-		top: -45%;
+		width: 330px;
+		height: 330px;
+		right: 0;
+		top: -50px;
 	}
 }
 
@@ -98,7 +98,7 @@
 	}
 
 	.cta__inner{
-		padding: 30px;
+		padding: 30px 200px 30px 30px;
 	}
 
 	.cta__title{
@@ -107,10 +107,11 @@
 	}
 
 	.cta__image {
-		width: 250px;
-		height: 250px;
-		right: -30px;
-		top: -90px;
+		width: 260px;
+		height: 260px;
+		right: -60px;
+		top: 50%;
+		transform: translateY(-50%);
 	}
 
 	.cta__button-title{
@@ -127,8 +128,7 @@
 	}
 
 	.cta__inner{
-		padding-top: 60px;
-		background-position: bottom center;
+		padding: 30px 30px 30px 30px;
 	}
 
 	.cta__title{
@@ -140,11 +140,16 @@
 	}
 
 	.cta__image {
+		position: relative;
 		width: 200px;
 		height: 200px;
 		right: auto;
-		left: calc(50% - 130px);
-		top: -130px;
+		left: auto;
+		top: auto;
+		transform: translateY(0);
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
 	}
 
 	.cta__button-title{
