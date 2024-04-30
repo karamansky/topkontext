@@ -253,6 +253,22 @@ class GutenbergBlocks {
 					]
 				]
 			],
+			[
+				'name'        => 'portfolio',
+				'title'       => 'Portfolio block',
+				'category'    => 'top-blocks',
+				'description' => '',
+				'icon'        => [ 'background' => '#0b1d64', 'src' => 'analytics' ],
+				'keywords'    => [ 'portfolio', 'cases', 'block' ],
+				'example'     => [
+					'attributes' => [
+						'mode' => 'preview',
+						'data' => [
+							'image' => 'portfolio-block.png',
+						]
+					]
+				]
+			],
 		];
 	}
 

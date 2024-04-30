@@ -16,6 +16,7 @@ class RegisterCustom {
         if( !function_exists( 'register_post_type' ) ) return;
 
         static::registerCustomPostTypeSingle( 'reviews', 'Reviews', 'Review', 'reviews' );
+        static::registerCustomPostTypeSingle( 'portfolio', 'Portfolio', 'Portfolio', 'portfolio' );
     }
 
     static public function registerCustomPostTypeSingle( $type_name, $label, $singular, $slug = '', $supports = [] ) {
