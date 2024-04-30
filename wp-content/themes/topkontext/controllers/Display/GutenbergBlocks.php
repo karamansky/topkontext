@@ -126,6 +126,22 @@ class GutenbergBlocks {
 				]
 			],
 			[
+				'name'        => 'text_with_bg',
+				'title'       => 'Text with bg block',
+				'category'    => 'top-blocks',
+				'description' => '',
+				'icon'        => [ 'background' => '#0b1d64', 'src' => 'media-document' ],
+				'keywords'    => [ 'text', 'image', 'background', 'block' ],
+				'example'     => [
+					'attributes' => [
+						'mode' => 'preview',
+						'data' => [
+							'image' => 'text-with-bg-block.png',
+						]
+					]
+				]
+			],
+			[
 				'name'        => 'text_with_image_right',
 				'title'       => 'Text with image right block',
 				'category'    => 'top-blocks',
