@@ -3,6 +3,66 @@
     "title": "Page: Portfolio",
     "fields": [
         {
+            "key": "field_6630a0a6407c8",
+            "label": "Ad budget",
+            "name": "ad_budget",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6630a0b8407c9",
+            "label": "Revenue",
+            "name": "revenue",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6630a0ea407ca",
+            "label": "Time",
+            "name": "time",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_66309ad111db1",
             "label": "Popup Title",
             "name": "title",
@@ -148,5 +208,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1714461701
+    "modified": 1714463660
 }

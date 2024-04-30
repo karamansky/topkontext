@@ -9,6 +9,29 @@ jQuery(document).ready(function( $ ) {
     }
 
 
+    if( jQuery('.portfolio-case__overlay').length ) {
+        jQuery(document).on('click', '.portfolio-case__overlay', function(e) {
+            e.preventDefault();
+
+            let popup = jQuery(this).parent().find('.portfolio-popup');
+            if( popup.length ) {
+                popup.addClass('show');
+                jQuery('body').addClass('top-open');
+            }
+        });
+    }
+
+
+    if( jQuery('.portfolio-popup__close').length ) {
+        jQuery(document).on('click', '.portfolio-popup__close', function(e){
+            e.preventDefault();
+
+            jQuery(this).parent().removeClass('show');
+            jQuery('body').removeClass('top-open');
+        })
+    }
+
+
     if( jQuery('.reviews-slider__items').length ){
         jQuery('.reviews-slider__items').slick({
             dots: false,

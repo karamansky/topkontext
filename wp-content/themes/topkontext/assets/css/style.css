@@ -107,19 +107,19 @@ button {
 
 .btn--blue:hover {
   background: #fff;
-  border-color: #2E2F61;
-  color: #2E2F61;
+  border-color: #2e2f62;
+  color: #2e2f62;
 }
 
 .btn--dark-blue {
-  background-color: #2E2F61;
-  border: 2px solid #2E2F61;
+  background-color: #2e2f62;
+  border: 2px solid #2e2f62;
   color: #fff;
 }
 
 .btn--dark-blue:hover {
   background: #fff;
-  border-color: #2E2F61;
+  border-color: #2e2f62;
   color: #fff;
 }
 
@@ -308,7 +308,7 @@ button {
 }
 
 .header__phone:hover {
-  background: #2E2F61;
+  background: #2e2f62;
   color: #fff;
 }
 
@@ -375,7 +375,7 @@ button {
 
 .header__menu--mob.top-open + .header__phone-mob {
   padding: 5px 0;
-  border-top: 1px solid #2E2F61;
+  border-top: 1px solid #2e2f62;
 }
 
 .header__menu--mob .sub-menu {
@@ -398,7 +398,7 @@ button {
 }
 
 .header__menu--mob .menu-item.current-menu-item a {
-  color: #2E2F61;
+  color: #2e2f62;
 }
 
 .hero {
@@ -507,7 +507,7 @@ button {
 }
 
 .text-columns {
-  background: #2E2F61;
+  background: #2e2f62;
   padding-top: 60px;
   padding-bottom: 60px;
   position: relative;
@@ -655,7 +655,7 @@ button {
 
 .text-with-image {
   padding: 120px 0;
-  background: #2E2F61;
+  background: #2e2f62;
 }
 
 .text-with-image__inner {
@@ -742,7 +742,7 @@ button {
   font-size: 50px;
   line-height: 57px;
   font-weight: 700;
-  color: #2E2F61;
+  color: #2e2f62;
   margin: 0 0 25px;
 }
 
@@ -775,7 +775,7 @@ button {
 
 .text-with-bg {
   padding: 150px 0;
-  background-color: #2E2F61;
+  background-color: #2e2f62;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -869,7 +869,7 @@ button {
 }
 
 .reviews-slider__item {
-  background: #2E2F61;
+  background: #2e2f62;
   padding: 40px 40px 90px;
   border-radius: 20px;
   color: #fff;
@@ -996,7 +996,7 @@ button {
   font-family: "Poppins", sans-serif;
   font-size: 45px;
   line-height: 51px;
-  color: #2E2F61;
+  color: #2e2f62;
   font-weight: 700;
   margin-bottom: 40px;
 }
@@ -1051,7 +1051,7 @@ button {
 }
 
 .how-we-do__item-title {
-  color: #2E2F61;
+  color: #2e2f62;
   font-size: 24px;
   line-height: 1.5;
   letter-spacing: -1.5px;
@@ -1074,7 +1074,7 @@ button {
 }
 
 .cta__inner {
-  background: #2E2F61;
+  background: #2e2f62;
   color: #fff;
   border-radius: 20px;
   padding: 45px 240px 45px 50px;
@@ -1151,7 +1151,7 @@ button {
   font-size: 30px;
   line-height: 1.5;
   font-weight: 700;
-  color: #2E2F61;
+  color: #2e2f62;
   margin-bottom: 35px;
 }
 
@@ -1229,7 +1229,7 @@ button {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background: #2E2F61 no-repeat;
+  background: #2e2f62 no-repeat;
   color: #fff;
   border-radius: 20px;
   padding: 70px 50px;
@@ -1253,7 +1253,7 @@ button {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #2E2F61;
+  background: #2e2f62;
   position: absolute;
   right: -80px;
   bottom: 60px;
@@ -1355,7 +1355,7 @@ button {
   font-size: 45px;
   line-height: 1.1;
   font-weight: 700;
-  color: #2E2F61;
+  color: #2e2f62;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -1446,7 +1446,7 @@ button {
   height: 24px;
   font-size: 20px;
   line-height: 1;
-  color: #2E2F61;
+  color: #2e2f62;
   position: absolute;
   left: 20px;
   top: 28px;
@@ -1465,9 +1465,240 @@ button {
   content: "\f095";
 }
 
+.portfolio-block {
+  background: #fff;
+  padding: 120px 0;
+}
+
+.portfolio-block__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 45px;
+  line-height: 51px;
+  color: #2e2f62;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.portfolio-block__text {
+  margin: 10px 0 35px;
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+}
+
+.portfolio-block__cases {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 340px;
+  gap: 20px;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.portfolio-case {
+  position: relative;
+}
+
+.portfolio-case:hover .portfolio-case__overlay {
+  opacity: 1;
+}
+
+.portfolio-case:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.portfolio-case:nth-child(3) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.portfolio-case:nth-child(4) {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.portfolio-case__overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: rgba(46, 47, 97, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  border-radius: 4px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.portfolio-case__image {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-case__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.portfolio-popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  overflow: auto;
+  z-index: 10000;
+}
+
+.portfolio-popup.show {
+  display: block;
+}
+
+.portfolio-popup__close {
+  position: fixed;
+  right: 40px;
+  top: 20px;
+  color: #2e2f62;
+  font-size: 40px;
+}
+
+.portfolio-popup__info {
+  width: 800px;
+  margin: 100px auto;
+  border: 1px solid #CBD3EE;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.portfolio-popup__left {
+  width: 40%;
+}
+
+.portfolio-popup__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  line-height: 1.35;
+  color: #2e2f62;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.portfolio-popup__description {
+  margin: 0 0 20px;
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #444;
+}
+
+.portfolio-popup__description p {
+  font-size: 14px;
+  line-height: 1.3;
+  color: #444;
+}
+
+.portfolio-popup__description p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.portfolio-popup__description b,
+.portfolio-popup__description strong {
+  font-weight: 700;
+}
+
+.portfolio-popup__ad-info {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.portfolio-popup__ad-info > div {
+  position: relative;
+  padding-left: 48px;
+  margin-bottom: 15px;
+}
+
+.portfolio-popup__ad-info > div:before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 0;
+  top: calc(50% - 20px);
+}
+
+.portfolio-popup__ad-info > div span {
+  display: block;
+  font-weight: 600;
+}
+
+.portfolio__ad-budget:before {
+  background: url("../img/icons/dollar-icon.svg") center center no-repeat;
+  background-size: 100%;
+}
+
+.portfolio__revenue:before {
+  background: url("../img/icons/profit-icon.svg") center center no-repeat;
+  background-size: 100%;
+}
+
+.portfolio__time:before {
+  background: url("../img/icons/clock-icon.svg") center center no-repeat;
+  background-size: 100%;
+}
+
+.portfolio-popup__right {
+  width: 60%;
+  padding-left: 40px;
+}
+
+.portfolio-popup__image {
+  width: 100%;
+}
+
+.portfolio-popup__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
 .footer__copy {
   padding: 15px 0;
-  background: #2E2F61;
+  background: #2e2f62;
 }
 
 .footer__copy-inner {
@@ -1766,6 +1997,23 @@ button {
 
   .contact-form__wrap {
     padding: 50px;
+  }
+
+  .portfolio-block__cases {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .portfolio-case {
+    width: calc(50% - 15px);
+    margin-bottom: 30px;
   }
 }
 
@@ -2072,6 +2320,33 @@ button {
 
   .contact-form__form form .input-wrap--half {
     width: 100%;
+  }
+
+  .portfolio-block {
+    padding: 80px 0;
+  }
+
+  .portfolio-popup__info {
+    display: block;
+    width: 94%;
+    margin: 50px auto;
+    padding: 20px;
+  }
+
+  .portfolio-popup__close {
+    right: 20px;
+    top: 10px;
+    font-size: 30px;
+  }
+
+  .portfolio-popup__left {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .portfolio-popup__right {
+    width: 100%;
+    padding-left: 0;
   }
 
   .footer__copy-left {

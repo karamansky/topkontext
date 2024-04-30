@@ -1,0 +1,277 @@
+.portfolio-block {
+	background: #fff;
+	padding: 120px 0;
+}
+
+.portfolio-block__title {
+	font-family: $poppins;
+	font-size: 45px;
+	line-height: 51px;
+	color: $dark-blue;
+	font-weight: 700;
+	margin-bottom: 40px;
+}
+
+.portfolio-block__text {
+	margin: 10px 0 35px;
+	font-family: $arial;
+	font-size: 16px;
+	line-height: 1.8;
+	color: #444;
+}
+
+.portfolio-block__cases {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-auto-rows: 340px;
+	gap: 20px;
+	max-width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.portfolio-case {
+	position: relative;
+
+	&:hover {
+		.portfolio-case__overlay {
+			opacity: 1;
+		}
+	}
+
+	&:nth-child(1) {
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
+
+	&:nth-child(3) {
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 2;
+		grid-row-end: 4;
+	}
+
+	&:nth-child(4) {
+		grid-column-start: 2;
+		grid-column-end: 4;
+		grid-row-start: 2;
+		grid-row-end: 3;
+	}
+}
+
+.portfolio-case__overlay {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(46,47,97,0.5);
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	border-radius: 4px;
+	transition: all .4s;
+}
+
+.portfolio-case__image {
+	width: 100%;
+	height: 100%;
+
+	img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 4px;
+	}
+}
+
+.portfolio-popup {
+	display: none;
+
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: #fff;
+	overflow: auto;
+	z-index: 10000;
+
+	&.show {
+		display: block;
+	}
+}
+
+.portfolio-popup__close {
+	position: fixed;
+	right: 40px;
+	top: 20px;
+	color: $dark-blue;
+	font-size: 40px;
+}
+
+.portfolio-popup__info {
+	width: 800px;
+	margin: 100px auto;
+	border: 1px solid $light-blue;
+	border-radius: 8px;
+
+	display: flex;
+	justify-content: space-between;
+	padding: 30px;
+}
+
+.portfolio-popup__left {
+	width: 40%;
+}
+
+.portfolio-popup__title {
+	font-family: $poppins;
+	font-size: 28px;
+	line-height: 1.35;
+	color: $dark-blue;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.portfolio-popup__description {
+	margin: 0 0 20px;
+	font-family: $arial;
+	font-size: 14px;
+	line-height: 1.3;
+	color: #444;
+
+	p {
+		font-size: 14px;
+		line-height: 1.3;
+		color: #444;
+
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+
+	b,
+	strong {
+		font-weight: 700;
+	}
+}
+
+.portfolio-popup__ad-info {
+	font-family: $poppins;
+	font-size: 16px;
+	line-height: 1.5;
+
+	& > div {
+		position: relative;
+		padding-left: 48px;
+		margin-bottom: 15px;
+
+		&:before {
+			content: '';
+			width: 40px;
+			height: 40px;
+			position: absolute;
+			left: 0;
+			top: calc(50% - 20px);
+		}
+
+		span {
+			display: block;
+			font-weight: 600;
+		}
+	}
+}
+
+.portfolio__ad-budget {
+	&:before {
+		background: url('../img/icons/dollar-icon.svg') center center no-repeat;
+		background-size: 100%;
+	}
+}
+
+.portfolio__revenue {
+	&:before {
+		background: url('../img/icons/profit-icon.svg') center center no-repeat;
+		background-size: 100%;
+	}
+}
+
+.portfolio__time {
+	&:before {
+		background: url('../img/icons/clock-icon.svg') center center no-repeat;
+		background-size: 100%;
+	}
+}
+
+.portfolio-popup__right {
+	width: 60%;
+	padding-left: 40px;
+}
+
+.portfolio-popup__image {
+	width: 100%;
+
+	img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		border-radius: 8px;
+	}
+}
+
+
+
+
+
+@media ($br_point_tablet) {
+	.portfolio-block__cases {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 0;
+	}
+
+	.portfolio-case {
+		width: calc(50% - 15px);
+		margin-bottom: 30px;
+	}
+}
+
+
+
+
+
+@media ($br_point_phone) {
+	.portfolio-block {
+		padding: 80px 0;
+	}
+
+	.portfolio-popup__info {
+		display: block;
+		width: 94%;
+		margin: 50px auto;
+		padding: 20px;
+	}
+
+	.portfolio-popup__close {
+		right: 20px;
+		top: 10px;
+		font-size: 30px;
+	}
+
+	.portfolio-popup__left {
+		width: 100%;
+		margin-bottom: 40px;
+	}
+
+	.portfolio-popup__right {
+		width: 100%;
+		padding-left: 0;
+	}
+}
