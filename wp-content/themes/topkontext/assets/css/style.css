@@ -292,8 +292,7 @@ button {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   line-height: 1;
-  font-weight: 800;
-  text-transform: uppercase;
+  font-weight: 700;
   height: 47px;
 }
 
@@ -336,46 +335,14 @@ button {
   display: none;
 }
 
-.header__phone-mob {
-  display: none;
-  width: 100%;
-  height: 50px;
-  background: #474575;
-  color: #FFFFFF;
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.2;
-  padding: 0 15px;
-}
-
-.header__phone-mob span {
-  text-transform: capitalize;
-  margin-right: 8px;
-}
-
-.header__phone-mob .header__phone--mob {
-  color: #fff;
-  font-weight: 700;
-}
-
-.header__phone-mob .header__phone--mob i {
-  display: none;
-}
-
 .header__menu--mob {
   display: none;
   padding: 10px 15px;
   overflow: hidden;
   background: #474575;
-  height: calc(100vh - 110px);
-  height: calc(100dvh - 110px);
+  height: 100vh;
+  height: 100dvh;
   overflow-y: auto;
-}
-
-.header__menu--mob.top-open + .header__phone-mob {
-  padding: 5px 0;
-  border-top: 1px solid #2e2f62;
 }
 
 .header__menu--mob .sub-menu {
@@ -2096,20 +2063,6 @@ button {
     justify-content: center;
   }
 
-  .header__phone-mob {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-
   .hero {
     overflow-x: hidden;
   }
@@ -2125,6 +2078,7 @@ button {
 
   .hero__content {
     width: 100%;
+    max-width: 100%;
     margin: 0;
     padding-top: 100px;
   }

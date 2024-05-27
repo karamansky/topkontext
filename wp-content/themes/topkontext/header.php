@@ -19,8 +19,6 @@
 <?php
 	$logo = get_field('header_logo', 'option');
 	$button = get_field('header_button', 'option');
-	$phone = get_field('header_phone', 'option');
-	$phone_cta_text = get_field('phone_cta_text', 'option');
 ?>
 <header class="header">
 	<div class="wrapper">
@@ -47,13 +45,13 @@
 			<div class="header__right">
 				<?php if( !empty($button) || !empty($phone) ) { ?>
 					<div class="header__buttons">
-<!--						--><?php //if( !empty($button) ) { DisplayGlobal::renderAcfLink( $button, 'header__button btn btn--blue' ); } ?>
-						<?php if( !empty($phone) ) { ?>
-							<a href="tel:<?php echo preg_replace("/[^0-9]/", "", $phone) ?>" class="header__phone btn btn--blue">
-								<i class="fa fa-phone"></i>
-								<?php echo sanitize_text_field($phone); ?>
-							</a>
-						<?php } ?>
+						<?php if( !empty($button) ) { DisplayGlobal::renderAcfLink( $button, 'header__button btn btn--blue' ); } ?>
+<!--						--><?php //if( !empty($phone) ) { ?>
+<!--							<a href="tel:--><?php //echo preg_replace("/[^0-9]/", "", $phone) ?><!--" class="header__phone btn btn--blue">-->
+<!--								<i class="fa fa-phone"></i>-->
+<!--								--><?php //echo sanitize_text_field($phone); ?>
+<!--							</a>-->
+<!--						--><?php //} ?>
 					</div>
 				<?php } ?>
 				<a href="#" class="header__navbar-toggle">
@@ -77,15 +75,15 @@
 		?>
 	</nav>
 
-	<?php if( !empty($phone) ) { ?>
-		<div class="header__phone-mob">
-			<?php if( !empty($phone_cta_text) ) { ?>
-				<span><?php echo $phone_cta_text ?></span>
-			<?php } ?>
-			<a href="tel:<?php echo preg_replace("/[^0-9]/", "", $phone) ?>" class="header__phone--mob">
-				<i class="fa fa-phone"></i>
-				<?php echo sanitize_text_field($phone); ?>
-			</a>
-		</div>
-	<?php } ?>
+<!--	--><?php //if( !empty($phone) ) { ?>
+<!--		<div class="header__phone-mob">-->
+<!--			--><?php //if( !empty($phone_cta_text) ) { ?>
+<!--				<span>--><?php //echo $phone_cta_text ?><!--</span>-->
+<!--			--><?php //} ?>
+<!--			<a href="tel:--><?php //echo preg_replace("/[^0-9]/", "", $phone) ?><!--" class="header__phone--mob">-->
+<!--				<i class="fa fa-phone"></i>-->
+<!--				--><?php //echo sanitize_text_field($phone); ?>
+<!--			</a>-->
+<!--		</div>-->
+<!--	--><?php //} ?>
 </header>
