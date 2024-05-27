@@ -269,6 +269,22 @@ class GutenbergBlocks {
 					]
 				]
 			],
+			[
+				'name'        => 'text',
+				'title'       => 'Text block',
+				'category'    => 'top-blocks',
+				'description' => '',
+				'icon'        => [ 'background' => '#0b1d64', 'src' => 'media-spreadsheet' ],
+				'keywords'    => [ 'text', 'content', 'block' ],
+				'example'     => [
+					'attributes' => [
+						'mode' => 'preview',
+						'data' => [
+							'image' => 'text-block.png',
+						]
+					]
+				]
+			],
 		];
 	}
 

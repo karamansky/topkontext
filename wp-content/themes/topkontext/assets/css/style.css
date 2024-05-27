@@ -1663,6 +1663,102 @@ button {
   border-radius: 8px;
 }
 
+.text-content {
+  padding: 80px 0;
+  background: #fff;
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
+  color: #444444;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.text-content p {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #444444;
+}
+
+.text-content p:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.text-content h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.text-content h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.text-content h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.text-content h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.text-content h5 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.text-content h6 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.text-content b,
+.text-content strong {
+  font-weight: 700;
+}
+
+.text-content a {
+  text-decoration: underline;
+  color: #474575;
+}
+
+.text-content a:hover {
+  text-decoration: none;
+}
+
+.text-content ul {
+  list-style-position: outside;
+  padding-left: 20px;
+}
+
+.text-content ul:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.text-content ul li {
+  list-style-type: disc;
+}
+
+.text-content ol {
+  list-style-position: outside;
+  padding-left: 23px;
+}
+
+.text-content ol:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.text-content ol li {
+  list-style-type: decimal;
+}
+
 .text-page {
   padding: 50px 0;
   background: #fff;
@@ -2120,6 +2216,52 @@ button {
   .portfolio-case {
     width: calc(50% - 15px);
     margin-bottom: 30px;
+  }
+
+  .text-content {
+    padding: 35px 0;
+  }
+
+  .text-content p:not(:last-child) {
+    margin-bottom: 7px;
+  }
+
+  .text-content h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .text-content h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  .text-content h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .text-content h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .text-content h5 {
+    font-size: 16px;
+    margin-bottom: 7px;
+  }
+
+  .text-content h6 {
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
+
+  .text-content ul:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .text-content ol:not(:last-child) {
+    margin-bottom: 10px;
   }
 
   .text-page {
