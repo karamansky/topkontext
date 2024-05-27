@@ -5,6 +5,43 @@
 .footer__copy{
 	padding: 15px 0;
 	background: $dark-blue;
+
+	.footer__menu {
+		.footer-menu {
+			display: flex;
+			justify-content: flex-end;
+			flex-wrap: wrap;
+			align-items: center;
+		}
+
+		.menu-item {
+			margin-left: 15px;
+			position: relative;
+			&:not(:first-child):after {
+				content: '';
+				display: block;
+				width: 1px;
+				height: 14px;
+				background: #fff;
+				position: absolute;
+				left: -7px;
+				top: calc(50% - 7px);
+			}
+
+			a {
+				font-family: $arial;
+				color: #fff;
+				font-size: 13px;
+				line-height: 26px;
+				font-weight: 400;
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
 }
 
 .footer__copy-inner{

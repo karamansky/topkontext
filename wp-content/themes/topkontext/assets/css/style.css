@@ -1701,6 +1701,49 @@ button {
   background: #2e2f62;
 }
 
+.footer__copy .footer__menu .footer-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.footer__copy .footer__menu .menu-item {
+  margin-left: 15px;
+  position: relative;
+}
+
+.footer__copy .footer__menu .menu-item:not(:first-child):after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 14px;
+  background: #fff;
+  position: absolute;
+  left: -7px;
+  top: calc(50% - 7px);
+}
+
+.footer__copy .footer__menu .menu-item a {
+  font-family: "Arial", "Helvetica", sans-serif;
+  color: #fff;
+  font-size: 13px;
+  line-height: 26px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.footer__copy .footer__menu .menu-item a:hover {
+  text-decoration: underline;
+}
+
 .footer__copy-inner {
   display: -webkit-box;
   display: -ms-flexbox;

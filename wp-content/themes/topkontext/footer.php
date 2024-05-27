@@ -1,6 +1,5 @@
 <?php
 	$copy = get_field('footer_copy', 'option');
-	$footer_image = get_field('footer_image', 'option');
 ?>
 
 <footer class="footer">
@@ -17,11 +16,20 @@
 			<?php if( !empty($copy) ) { ?>
 				<div class="footer__copy-left"><?php echo '&copy;' . date('Y') . ' ' . $copy ?></div>
 			<?php } ?>
-			<?php if( !empty($footer_image) ) { ?>
-				<div class="footer__copy-right">
-					<?php DisplayGlobal::renderAcfImage($footer_image); ?>
-				</div>
-			<?php } ?>
+			<div class="footer__copy-right">
+				<nav class="footer__menu">
+					<?php
+						wp_nav_menu(
+							[
+								'theme_location' => 'footer-menu',
+								'menu_class'     => 'footer-menu',
+								'container'       => 'nav',
+								'container_class' => 'footer-menu__container',
+							]
+						);
+					?>
+				</nav>
+			</div>
 		</div>
 	</div>
 </div>
