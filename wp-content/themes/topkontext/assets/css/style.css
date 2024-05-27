@@ -1663,6 +1663,102 @@ button {
   border-radius: 8px;
 }
 
+.text-page {
+  padding: 50px 0;
+  background: #fff;
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
+  color: #444444;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.text-page p {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #444444;
+}
+
+.text-page p:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.text-page h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.text-page h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.text-page h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.text-page h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.text-page h5 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.text-page h6 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.text-page b,
+.text-page strong {
+  font-weight: 700;
+}
+
+.text-page a {
+  text-decoration: underline;
+  color: #474575;
+}
+
+.text-page a:hover {
+  text-decoration: none;
+}
+
+.text-page ul {
+  list-style-position: outside;
+  padding-left: 20px;
+}
+
+.text-page ul:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.text-page ul li {
+  list-style-type: disc;
+}
+
+.text-page ol {
+  list-style-position: outside;
+  padding-left: 23px;
+}
+
+.text-page ol:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.text-page ol li {
+  list-style-type: decimal;
+}
+
 .footer__copy {
   padding: 15px 0;
   background: #2e2f62;
@@ -2024,6 +2120,52 @@ button {
   .portfolio-case {
     width: calc(50% - 15px);
     margin-bottom: 30px;
+  }
+
+  .text-page {
+    padding: 25px 0;
+  }
+
+  .text-page p:not(:last-child) {
+    margin-bottom: 7px;
+  }
+
+  .text-page h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .text-page h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  .text-page h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .text-page h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .text-page h5 {
+    font-size: 16px;
+    margin-bottom: 7px;
+  }
+
+  .text-page h6 {
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
+
+  .text-page ul:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .text-page ol:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 
